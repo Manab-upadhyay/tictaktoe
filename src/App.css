@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.board {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.status {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+}
+
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  background-color: #fff;
+  border: 2px solid #333;
+  float: left;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 64px;
+  height: 64px;
+  margin-right: -2px;
+  margin-top: -2px;
+  width: 64px;
+}
+
+.square {
+  background-color: #fff;
+  border: 4px solid yellow; /* Change border thickness and color */
+  float: left;
+  font-size: 36px; /* Increase font size for larger squares */
+  font-weight: bold;
+  line-height: 80px; /* Adjust line-height for centering content */
+  height: 80px; /* Increase square size */
+  margin-right: -4px;
+  margin-top: -4px;
+  width: 80px; /* Increase square size */
+}
+
+
+.x {
+  color: #ff3333;
+}
+
+.o {
+  color: #3385ff;
+}
+.restart {
+  display: flex;
+  align-self: center;
+  margin-top: 20px; /* Adjust margin as needed */
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #4caf50; /* Green */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.restart:hover {
+  background-color: #45a049; /* Darker green */
+}
